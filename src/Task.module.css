@@ -1,0 +1,62 @@
+.task {
+    display: flex;
+    box-shadow: 0 2px 8px 0 #0000000F;
+    border: 1px solid var(--gray-400);
+    background: var(--gray-500);
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+
+
+.task span {
+    display: flex;
+    font-size: 0.875rem;
+    color: var(--gray-100);
+    gap: 1rem;
+}
+
+.task span p {
+    margin: 0
+}
+
+.task.done span {
+    color: var(--gray-300);
+    text-decoration-line: line-through;
+}
+
+.iconWrapper {
+    cursor: pointer;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.iconWrapper.done {
+    border: none;
+    background: var(--purple);
+}
+
+.iconWrapper.done svg {
+    color: var(--gray-100)
+}
+
+.delete {
+    color: var(--gray-300);
+}
+
+.delete:hover {
+    color: var(--danger);
+    cursor: pointer;
+}
+
+.delete:focus {
+    outline: var(--danger) solid 1px;
+    border-radius: 2px;
+}
