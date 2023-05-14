@@ -15,7 +15,7 @@ export const TaskManager = () => {
     const handleCreateNewTask = (event: FormEvent) => {
         event.preventDefault();
         const newTask: TaskItem = {
-            id: tasks.length,
+            id: new Date().getTime(),
             title: newTaskTitle,
             done: false,
         }
